@@ -30,9 +30,6 @@ logger_path = pathlib.Path("./conf/config.yaml")
 print("current_path: ", logger_path.resolve())
 conf = ConfigLoader(logger_path, "offline_logging")
 _logger = logging.getLogger(__name__)
-_logger.info("start!")
-_logger.error("error!")
-exit()
 
 
 def main():
